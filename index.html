@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonk Banner</title>
+    <link rel="shortcut icon" href="/Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="w-full min-h-screen ">
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between max-w-7xl w-full p-5 mx-auto">
+            <a href="./index.html">
+                <img src="./Docs/Assets/logo.webp" class="md:h-12 h-8" alt="">
+            </a>
+            <ul class="md:flex hidden items-center gap-8 text-black font-medium tracking-wide">
+                <li><a href="#" class=""> Tutorials</a></li>
+                <li><a href="#" class=""> Pricing</a></li>
+                <li><a href="#" class=""> FAQ</a></li>
+                <li><a href="#" class=""> Al Assistant</a></li>
+                <li><a href="#" class=""> Affiliate Business</a></li>
+            </ul>
+            <i class="fa-solid fa-bars text-[#000] md:hidden text-2xl cursor-pointer" id="openNav"></i>
+        </nav>
+        <!-- responsive Navbar -->
+
+        <div class="w-0 overflow-hidden z-50 bg-white fixed left-0 top-0 h-screen transition-all duration-500"
+            id="responsiveNavbar">
+            <i class="fa-solid fa-x flex justify-end p-5 cursor-pointer text-zinc-700" id="closeNav"></i>
+            <ul class="flex flex-col  font-medium tracking-wide">
+                <li><a href="./index.html" class="text-nowrap block p-5 bg-zinc-100 text-black "> Tutorials</a></li>
+                <li><a href="./privacy-and-refund-policy.html"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> Pricing</a></li>
+                <li><a href="#" class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> FAQ</a>
+                </li>
+                <li><a href="#" class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> Al
+                        Assistant</a></li>
+                <li><a href="#" class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> Affiliate
+                        Business</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Section -->
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
