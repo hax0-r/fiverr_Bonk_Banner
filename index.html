@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-[#f4f7fe]">
 
     <div class="w-full min-h-screen ">
         <!-- Navbar -->
@@ -50,10 +50,133 @@
         </div>
 
         <!-- Main Section -->
+
+        <section class="max-w-7xl w-full mx-auto p-4  flex items-center flex-col justify-center min-h-[80vh] h-full">
+            <h1
+                class="font-bold md:text-6xl text-3xl slidein opacity-0 [--slidein-delay:300ms] text-center !leading-snug">
+                The ultimate 100% digital loyalty program for your customers.
+            </h1>
+            <h2
+                class="font-bold slidein opacity-0 [--slidein-delay:500ms] md:text-5xl max-w-5xl w-full mx-auto md:pt-14 pt-8 text-2xl text-[#ffc656] text-center !leading-tight">
+                Increase customer retention by up to 2x.
+                Boost average ticket value by up to 30%.</h2>
+            <p
+                class="font-bold slidein opacity-0 [--slidein-delay:700ms] md:text-2xl text-xl text-center md:pt-10 pt-6">
+                +30 local businesses build customer loyalty with us</p>
+        </section>
+    </div>
+
+    <div class="max-w-7xl md:pt-16 pt-10 w-full mx-auto p-4">
+
+
+        <div class="flex items-center justify-center flex-col">
+            <button
+                class="uppercase px-10 md:py-5 py-3 text-white md:text-2xl text-xl transition-all duration-500 hover:-translate-y-3 rounded-full bg-gradient-to-b font-semibold from-[#ffde59] to-[#ff914d]">Start
+                Your Free trial now</button>
+            <img src="./Docs/Assets/trustPoliet.png" class="md:h-28 mt-5" alt="">
+            <p class="font-bold md:text-2xl text-xl text-center md:pt-10 pt-6">
+                How does it work?</p>
+            <button
+                class="uppercase px-10 mt-5 md:py-4 py-4 border-2 border-black md:text-xl transition-all duration-500 hover:-translate-y-3 rounded-full font-bold ">I’d
+                like to schedule a CALL</button>
+            <h1 class="font-bold md:text-6xl text-2xl pt-8 text-center !leading-snug">
+                Choose from 8 types of cards.
+            </h1>
+            <p class="md:font-bold font-semibold md:text-2xl text-center pt-3">
+                *All cards are fully customizable (logo, colors, icons, text, etc.)</p>
+
+            <iframe class="w-full rounded-lg md:h-[44rem] sm:h-[15rem] h-[12rem] mt-5 md:mt-8 border"
+                src="https://www.youtube.com/embed/u31qwQUeGuM?si=K1JMgZ7G0ACcfHc3" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="grid mobileCards md:grid-cols-4 md:pt-16 pt-10 sm:grid-cols -2 md:gap-4 gap-2 w-full">
+
+            <!-- Mobile card data Here -->
+
+            <!-- <div class="w-full bg-[#e6e6e6] rounded-[2.5rem] border-4 border-white overflow-hidden p-4">
+                <img src="./Docs/Assets/mobile1.png" class="w-full" alt="">
+                <h2 class="font-bold text-center text-3xl py-3.5">CASHBACK</h2>
+                <p class="text-center font-semibold text-lg pb-2 leading-tight">Customer cashback as an incentive for
+                    future purchases.</p>
+            </div> -->
+
+        </div>
+
+        <div
+            class="rounded-3xl bg-gradient-to-b relative from-[#ffde59] to-[#ff914d] p-4 md:mt-16 mt-12 flex items-center justify-between lg:min-h-[40rem] gap-5 md:flex-row flex-col">
+            <div class="md:max-w-[45%] w-full lg:ml-[10rem]">
+                <h2 class="text-white !leading-tight font-bold text-3xl md:text-[3.3rem]">Businesses in Tampa, Ocala, South Beach & Fort
+                    Lauderdale Trust Us</h2>
+            </div>
+            <div class="md:max-w-[45%] w-full lg:block hidden">
+            </div>
+            <img src="./Docs/Assets/map.png" class="md:h-[35rem] lg:absolute right-40 top-10" alt="">
+        </div>
+
+
     </div>
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
+    <script>
+        const cards = [
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "CASHBACK",
+                description: "Customer cashback as an incentive for future purchases."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "STAMPS",
+                description: "Buy 9, get the 10th free."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "REWARDS",
+                description: "Points system for your loyal customers."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "MEMBERSHIP",
+                description: "Create your VIP loyalty club for exclusive members."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "DISCOUNTS",
+                description: "Manage wholesale sales with discounts."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "COUPON",
+                description: "Perfect for ads. It transforms into a new one after being used."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "PREPAID",
+                description: "Advance payments with prepaid stamp cards."
+            },
+            {
+                image: "./Docs/Assets/mobile1.png",
+                title: "GIFTCARDS",
+                description: "Advance payments with prepaid gifts."
+            },
+        ];
+        const container = document.querySelector(".mobileCards");
+
+        cards.forEach(card => {
+            const cardHTML = `
+            <div class="w-full bg-[#e6e6e6] md:rounded-[2.5rem] rounded-3xl border-4 border-white overflow-hidden md:p-4 p-2">
+                <img src="${card.image}" class="w-full" alt="${card.title}">
+                <h2 class="font-bold text-center md:text-3xl text-2xl pt-6 md:pt py-3.5">${card.title}</h2>
+                <p class="text-center md:font-semibold font-medium md:text-lg pb-2 md:leading-tight">${card.description}</p>
+            </div>
+        `;
+            container.innerHTML += cardHTML;
+        });
+    </script>
 </body>
 
 </html>
