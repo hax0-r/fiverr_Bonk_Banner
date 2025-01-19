@@ -23,7 +23,7 @@
             </a>
             <ul class="md:flex hidden items-center gap-8 text-black font-medium tracking-wide">
                 <li><a href="./tutorials.html" class=""> Tutorials</a></li>
-                <li><a href="./pricing.html" class=""> Pricing</a></li>
+                <li><a href="./pricing.html" class="text-[#d8a644]"> Pricing</a></li>
                 <li><a href="./index.html#faq" class=""> FAQ</a></li>
                 <li><a href="./index.html#AlAssistant" class=""> Al Assistant</a></li>
                 <li class="cursor-pointer AffiliateBusinessOpen"> Affiliate Business</li>
@@ -39,8 +39,8 @@
                 <li><a href="./tutorials.html"
                         class="text-nowrap block transition-all duration-500 p-5 hover:bg-[#f4f7fe]"> Tutorials</a>
                 </li>
-                <li><a href="./pricing.html"
-                        class="text-nowrap block transition-all duration-500 bg-[#f0f5fa] p-5"> Pricing</a></li>
+                <li><a href="./pricing.html" class="text-nowrap block transition-all duration-500 bg-[#f0f5fa] p-5">
+                        Pricing</a></li>
                 <li><a href="./index.html#faq"
                         class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5 closeNav"> FAQ</a>
                 </li>
@@ -59,8 +59,8 @@
         <section class="max-w-7xl md:pt-16 pt-8 w-full mx-auto p-4">
             <div class="flex gap-4 items-center justify-center">
                 <p>Monthly</p>
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" >
+                    <input type="checkbox" id="btnChangePrice">
                     <span class="slider"></span>
                 </label>
                 <p>Anual</p>
@@ -78,8 +78,8 @@
                     <h2 class="  text-center pt-1"> <span class="font-semibold">1</span> Location</h2>
                     <p class="  text-center md:block hidden pt-1"> &nbsp;</p>
                     <div class="border-b w-20 mt-7 mb-6 border-[#ff914d]"></div>
-                    <h2 class="font-bold md:text-5xl text-2xl text-center">$219.99</h2>
-                    <p class="  text-center pt-1">Per month (Tax included)</p>
+                    <h2 class="font-bold md:text-5xl text-2xl text-center" id="startUpPrice">$219.99</h2>
+                    <p class="  text-center pt-1" id="startUpText">Per month (Tax included)</p>
                     <p class="  text-center pt-3 text-xs max-w-40 mx-auto">For small businesses that plan to grow
                         exponentially</p>
                     <div class="flex items-center justify-center mt-5 flex-col">
@@ -121,8 +121,8 @@
                     <h2 class="  text-center pt-1"> <span class="font-semibold">10</span> Location</h2>
                     <p class="  text-center pt-1"> Save up to $1000</p>
                     <div class="border-b w-20 mt-7 mb-6 border-[#fff]"></div>
-                    <h2 class="font-bold md:text-5xl text-2xl text-center">$1,199.99</h2>
-                    <p class="  text-center pt-1">Per month (Tax included)</p>
+                    <h2 class="font-bold md:text-5xl text-2xl text-center" id="startUpPrice2">$1,199.99</h2>
+                    <p class="  text-center pt-1" id="startUpText2">Per month (Tax included)</p>
                     <p class="  text-center pt-3 text-xs max-w-60 mx-auto">Suitable for growing businesses with multiple
                         locations</p>
                     <div class="flex items-center justify-center mt-5 flex-col">
@@ -163,8 +163,8 @@
                     <h2 class="  text-center pt-1"> <span class="font-semibold">3</span> Location</h2>
                     <p class="  text-center md:block hidden pt-1"> Save up to $200</p>
                     <div class="border-b w-20 mt-7 mb-6 border-[#ff914d]"></div>
-                    <h2 class="font-bold md:text-5xl text-2xl text-center">$459.99</h2>
-                    <p class="  text-center pt-1">Per month (Tax included)</p>
+                    <h2 class="font-bold md:text-5xl text-2xl text-center" id="startUpPrice3">$459.99</h2>
+                    <p class="  text-center pt-1" id="startUpText3">Per month (Tax included)</p>
                     <p class="  text-center pt-3 text-xs max-w-60 mx-auto">For experienced businesses that plan to
                         dominate the market</p>
                     <div class="flex items-center justify-center mt-5 flex-col">
@@ -605,6 +605,7 @@
     <!-- ============ Components ============ -->
 
     <script src="./Docs/Javascripts/global.js"></script>
+    <script src="./Docs/Javascripts/Pricing.js"></script>
 
 
 </body>
