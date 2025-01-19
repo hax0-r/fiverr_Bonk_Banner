@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonk Banner</title>
+    <link rel="shortcut icon" href="/Docs/Assets/favIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f4f7fe]">
+
+    <div class="w-full min-h-screen ">
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between max-w-7xl w-full md:pt-8 p-5 mx-auto">
+            <a href="./index.html">
+                <img src="./Docs/Assets/logo.png" class="md:h-12 -rotate-12 h-8" alt="">
+            </a>
+            <ul class="md:flex hidden items-center gap-8 text-black font-medium tracking-wide">
+                <li><a href="./tutorials.html" class=""> Tutorials</a></li>
+                <li><a href="./pricing.html" class=""> Pricing</a></li>
+                <li><a href="./index.html#faq" class=""> FAQ</a></li>
+                <li><a href="./index.html#AlAssistant" class=""> Al Assistant</a></li>
+                <li class="cursor-pointer AffiliateBusinessOpen"> Affiliate Business</li>
+            </ul>
+            <i class="fa-solid fa-bars text-[#000] md:hidden text-2xl cursor-pointer" id="openNav"></i>
+        </nav>
+        <!-- responsive Navbar -->
+
+        <div class="w-0 overflow-hidden z-50 ease-[cubic-bezier(.09,.33,0,.82)] bg-white fixed left-0 top-0 h-screen transition-all duration-500"
+            id="responsiveNavbar">
+            <i class="fa-solid fa-x flex justify-end p-5 cursor-pointer pt-8 text-zinc-700 closeNav"></i>
+            <ul class="flex flex-col  font-medium tracking-wide mt-6">
+                <li><a href="./index.html"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5 "> Tutorials</a>
+                </li>
+                <li><a href="./privacy-and-refund-policy.html"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> Pricing</a></li>
+                <li><a href="./index.html#faq"
+                        class="text-nowrap block transition-all duration-500 hover:bg-[#f0f5fa] p-5 closeNav"> FAQ</a>
+                </li>
+                <li><a href="./index.html#AlAssistant"
+                        class="text-nowrap closeNav block transition-all duration-500 hover:bg-[#f0f5fa] p-5"> Al
+                        Assistant</a></li>
+                <li><a
+                        class="text-nowrap block transition-all duration-500 closeNav hover:bg-[#f0f5fa] p-5 AffiliateBusinessOpen">
+                        Affiliate
+                        Business</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Section -->
+
+        <section class="max-w-7xl md:pt-16 pt-8 w-full mx-auto p-4">
+            <div class="flex gap-4 items-center justify-center">
+                <p>Monthly</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <p>Anual</p>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <div class="bg-black px-4 py-5 md:py-10 mt-8">
+        <div class="max-w-6xl w-full flex items-center md:flex-row flex-col justify-between gap-5 mx-auto">
+            <img src="./Docs/Assets/img.png" class="h-32" alt="">
+            <div class=" max-w-xl w-full text-white md:text-start text-center">
+                <p>Bonk Banner is a software solution by Josh & Co Brands, specialized in customer retention and
+                    loyalty
+                    for local businesses. Contact us: <a href="mailto:info@bonkbanner.com"
+                        class="text-blue-500 hover:underline">info@bonkbanner.com</a></p>
+                <p class="text-center pt-5">Bonk Banner 2025 All Rights Reserved</p>
+            </div>
+            <a href="./privacypolicy.html" class="md:w-auto w-full">
+                <button
+                    class="uppercase md:px-10 px-3 justify-center py-3 bg-white md:w-auto w-full transition-all duration-500  hover:-translate-y-3 rounded-full font-semibold text-nowrap">privacy
+                    policy</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- ============ Components ============ -->
+
+    <div class="fixed  top-0 left-0 w-full h-screen transition-all duration-500" style="opacity: 0;display: none;"
+        id="contectPopup">
+        <div class="w-full h-screen bg-[#00000053] fixed top-0 left-0" id="contectPopupOverlay"></div>
+        <div class="flex items-center justify-center h-screen p-4">
+
+            <form
+                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[90vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
+                <div class="max-w-[30rem] w-full mx-auto">
+
+                    <h2 class="text-center font-bold text-2xl"> Schedule Your Free Evaluation Call</h2>
+                    <p class="text-center pt-8">Fill out the following form to speak with
+                        someone from our team. After reviewing your responses, we will get in touch with you.</p>
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-8 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Full Name*">
+                    <input type="email"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Email*">
+                    <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
+                        placeholder="Name of Your Business*">
+
+                    <div
+                        class="rounded-lg bg-[#e0e0e0] pl-3 py-0. w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500 flex items-center gap-1">
+                        <img src="./Docs/Assets/usFlag.webp" class="h-4" alt="">
+                        <input type="number" class=" md:p-3.5 p-3 w-full bg-transparent rounded-lg" required
+                            placeholder="Phone*">
+                    </div>
+
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Business Type*">
+
+                    <div class=" mt-4 flex items-center gap-5">
+                        <label for="insta" class="text-zinc-700">Instagram</label>
+                        <input id="insta" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="TicTok" class="text-zinc-700">TicTok</label>
+                        <input id="TicTok" type="text"
+                            class=" md:max-w-[23.5rem] max-w-[11rem] ml-auto p-3 border rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="Facebook" class="text-zinc-700">Facebook</label>
+                        <input id="Facebook" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="Other" class="text-zinc-700">Other</label>
+                        <input id="Other" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+
+                    <textarea
+                        class=" md:p-3.5 resize-none p-3 rounded-lg bg-[#e0e0e0] w-full mt-4 border border-white focus:border-zinc-400 transition-all duration-500"
+                        placeholder="Tell us more about your business..." rows="4"></textarea>
+
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full border border-white focus:border-zinc-400 transition-all duration-500"
+                        placeholder="How did you hear about us?">
+
+                    <div class="flex items-center justify-center mt-4">
+                        <button
+                            class="px-16 transition-all duration-500 py-3 rounded-xl text-[#5271ff] hover:bg-[#5271ff] hover:text-white border-[#5271ff] border font-medium">SEND</button>
+                    </div>
+
+                    <div class="flex gap-3 items-start mt-7">
+                        <input type="checkbox" class="-mt-1 w-8 h-8">
+                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up
+                            regarding
+                            the contact number provided in this form.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy
+                            Policy</a>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="fixed  top-0 left-0 w-full h-screen transition-all duration-500" style="opacity: 0;display: none;"
+        id="AffiliateBusiness">
+        <div class="w-full h-screen bg-[#00000053] fixed top-0 left-0" id="AffiliateBusinessOverlay"></div>
+        <div class="flex items-center justify-center h-screen p-4">
+
+            <form
+                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[90vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
+                <div class="max-w-[30rem] w-full mx-auto">
+
+                    <h2 class="text-center font-bold text-2xl"> Do You Want to Resell our System?</h2>
+                    <p class="text-center pt-8">Fill out the following form to speak directly with Josh at Bonk
+                        Banner
+                        and expand your consultation / marketing agency!</p>
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-8 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Full Name*">
+                    <input type="email"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Email*">
+                    <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
+                        placeholder="Name of Your Business*">
+
+                    <div
+                        class="rounded-lg bg-[#e0e0e0] pl-3 py-0. w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500 flex items-center gap-1">
+                        <img src="./Docs/Assets/usFlag.webp" class="h-4" alt="">
+                        <input type="number" class=" md:p-3.5 p-3 w-full bg-transparent rounded-lg" required
+                            placeholder="Phone*">
+                    </div>
+
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
+                        required placeholder="Business Type*">
+
+                    <div class=" mt-4 flex items-center gap-5">
+                        <label for="insta" class="text-zinc-700">Instagram</label>
+                        <input id="insta" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="TicTok" class="text-zinc-700">TicTok</label>
+                        <input id="TicTok" type="text"
+                            class=" md:max-w-[23.5rem] max-w-[11rem] ml-auto p-3 border rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="Facebook" class="text-zinc-700">Facebook</label>
+                        <input id="Facebook" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+                    <div class=" mt-2 flex items-center gap-5">
+                        <label for="Other" class="text-zinc-700">Other</label>
+                        <input id="Other" type="text"
+                            class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
+                            placeholder="@">
+                    </div>
+
+                    <textarea
+                        class=" md:p-3.5 resize-none p-3 rounded-lg bg-[#e0e0e0] w-full mt-4 border border-white focus:border-zinc-400 transition-all duration-500"
+                        placeholder="Tell us more about your business..." rows="4"></textarea>
+
+                    <input type="text"
+                        class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full border border-white focus:border-zinc-400 transition-all duration-500"
+                        placeholder="How did you hear about us?">
+
+                    <div class="flex items-center justify-center mt-4">
+                        <button
+                            class="px-16 transition-all duration-500 py-3 rounded-xl text-[#5271ff] hover:bg-[#5271ff] hover:text-white border-[#5271ff] border font-medium">SEND</button>
+                    </div>
+
+                    <div class="flex gap-3 items-start mt-7">
+                        <input type="checkbox" class="-mt-1 w-8 h-8">
+                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up
+                            regarding
+                            the contact number provided in this form.</p>
+                    </div>
+
+                    <div class="flex items-center justify-center">
+                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy
+                            Policy</a>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ============ Components ============ -->
+
+    <script src="./Docs/Javascripts/global.js"></script>
+
+
+</body>
+
+</html>
