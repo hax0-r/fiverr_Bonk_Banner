@@ -246,7 +246,6 @@
     </div>
 
     <!-- ============ Components ============ -->
-
     <div class="fixed  top-0 left-0 w-full h-screen transition-all duration-500" style="opacity: 0;display: none;"
         id="contectPopup">
         <div class="w-full h-screen bg-[#00000053] fixed top-0 left-0" id="contectPopupOverlay"></div>
@@ -268,96 +267,25 @@
                     <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
                         name="your Business " placeholder="Name of Your Business*">
 
-                    <div
-                        class="relative rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
+                   <div
+                        class="relative dropdown-container rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
                         <!-- Selected Option -->
-                        <div id="selected2"
-                            class="flex items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
+                        <div
+                            class="flex selected dropdown-trigger items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
                             <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
                             <span class="text-gray-700">+1</span>
                         </div>
 
                         <!-- Dropdown Options -->
-                        <ul id="dropdown2"
-                            class="hidden max-h-40 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/us.png" data-code="+1">
-                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+1</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/gb.png" data-code="+44">
-                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+44</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/in.png" data-code="+91">
-                                <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+91</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/pk.png" data-code="+92">
-                                <img src="https://flagcdn.com/w40/pk.png" alt="Pakistan Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+92</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/au.png" data-code="+61">
-                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+61</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/sg.png" data-code="+65">
-                                <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+65</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/nz.png" data-code="+64">
-                                <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+64</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/de.png" data-code="+49">
-                                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+49</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/fr.png" data-code="+33">
-                                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+33</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/jp.png" data-code="+81">
-                                <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+81</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/cn.png" data-code="+86">
-                                <img src="https://flagcdn.com/w40/cn.png" alt="China Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+86</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/br.png" data-code="+55">
-                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+55</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/za.png" data-code="+27">
-                                <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+27</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/kr.png" data-code="+82">
-                                <img src="https://flagcdn.com/w40/kr.png" alt="South Korea Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+82</span>
-                            </li>
+                        <ul 
+                            class="hidden dropdown dropdown max-h-60 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
+                            <!-- Populated dynamically -->
                         </ul>
-
 
                         <!-- Input for phone number -->
                         <input type="number" name="Phone Number"
-                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none "
+                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none"
                             required placeholder="Phone*">
-
                     </div>
 
 
@@ -441,96 +369,25 @@
                     <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
                         name="your Business " placeholder="Name of Your Business*">
 
-                    <div
-                        class="relative rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
+                        <div
+                        class="relative dropdown-container rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
                         <!-- Selected Option -->
-                        <div id="selected"
-                            class="flex items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
+                        <div
+                            class="flex selected dropdown-trigger items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
                             <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
                             <span class="text-gray-700">+1</span>
                         </div>
 
                         <!-- Dropdown Options -->
-                        <ul id="dropdown"
-                            class="hidden max-h-40 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/us.png" data-code="+1">
-                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+1</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/gb.png" data-code="+44">
-                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+44</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/in.png" data-code="+91">
-                                <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+91</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/pk.png" data-code="+92">
-                                <img src="https://flagcdn.com/w40/pk.png" alt="Pakistan Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+92</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/au.png" data-code="+61">
-                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+61</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/sg.png" data-code="+65">
-                                <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+65</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/nz.png" data-code="+64">
-                                <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+64</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/de.png" data-code="+49">
-                                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+49</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/fr.png" data-code="+33">
-                                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+33</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/jp.png" data-code="+81">
-                                <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+81</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/cn.png" data-code="+86">
-                                <img src="https://flagcdn.com/w40/cn.png" alt="China Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+86</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/br.png" data-code="+55">
-                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+55</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/za.png" data-code="+27">
-                                <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+27</span>
-                            </li>
-                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
-                                data-flag="https://flagcdn.com/w40/kr.png" data-code="+82">
-                                <img src="https://flagcdn.com/w40/kr.png" alt="South Korea Flag" class="w-6 h-4">
-                                <span class="text-gray-700">+82</span>
-                            </li>
+                        <ul 
+                            class="hidden dropdown dropdown max-h-60 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
+                            <!-- Populated dynamically -->
                         </ul>
-
 
                         <!-- Input for phone number -->
                         <input type="number" name="Phone Number"
-                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none "
+                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none"
                             required placeholder="Phone*">
-
                     </div>
 
 
@@ -592,7 +449,6 @@
 
         </div>
     </div>
-
     <!-- ============ Components ============ -->
 
     <script src="./Docs/Javascripts/global.js"></script>

@@ -1,41 +1,41 @@
 const cards = [
     {
-        image: "./Docs/Assets/mobile1.png",
+        image: "./Docs/Assets/Cashback card.png",
         title: "CASHBACK",
         description: "Customer cashback as an incentive for future purchases."
     },
     {
-        image: "./Docs/Assets/mobile5.png",
+        image: "./Docs/Assets/Stamp Card.png",
         title: "STAMPS",
         description: "Buy 9, get the 10th free."
     },
     {
-        image: "./Docs/Assets/mobile6.png",
+        image: "./Docs/Assets/Points Card.png",
         title: "REWARDS",
         description: "Points system for your loyal customers."
     },
     {
-        image: "./Docs/Assets/mobile7.png",
+        image: "./Docs/Assets/Membership Card.png",
         title: "MEMBERSHIP",
         description: "Create your VIP loyalty club for exclusive members."
     },
     {
-        image: "./Docs/Assets/mobile8.png",
+        image: "./Docs/Assets/Discounts Card.png",
         title: "DISCOUNTS",
         description: "Manage wholesale sales with discounts."
     },
     {
-        image: "./Docs/Assets/mobile9.png",
+        image: "./Docs/Assets/Coupon Card.png",
         title: "COUPON",
         description: "Perfect for ads. It transforms into a new one after being used."
     },
     {
-        image: "./Docs/Assets/mobile10.png",
+        image: "./Docs/Assets/Prepaid Card.png",
         title: "PREPAID",
         description: "Advance payments with prepaid stamp cards."
     },
     {
-        image: "./Docs/Assets/mobile11.png",
+        image: "./Docs/Assets/Gift Cards.png",
         title: "GIFTCARDS",
         description: "Advance payments with prepaid gifts."
     },
