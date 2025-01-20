@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bonk Banner</title>
-    <link rel="shortcut icon" href="/Docs/Assets/favIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Docs/Assets/img.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -118,7 +118,7 @@
                 <div class="bg-gradient-to-t text-white from-[#ff8235] to-[#ff8235] via-[#eebe00] rounded-2xl p-5">
 
                     <h2 class="font-bold md:text-3xl text-2xl text-center">EXPANSION🌍</h2>
-                    <h2 class="  text-center pt-1"> <span class="font-semibold">10</span> Location</h2>
+                    <h2 class="  text-center pt-1"> <span class="font-semibold">3</span> Location</h2>
                     <p class="  text-center pt-1"> Save up to $1000</p>
                     <div class="border-b w-20 mt-7 mb-6 border-[#fff]"></div>
                     <h2 class="font-bold md:text-5xl text-2xl text-center" id="startUpPrice2">$1,199.99</h2>
@@ -160,7 +160,7 @@
                 <div class="bg-white rounded-2xl border-2 border-zinc-500 p-5">
 
                     <h2 class="font-bold md:text-3xl text-2xl text-center">COMMERCIAL 🚀</h2>
-                    <h2 class="  text-center pt-1"> <span class="font-semibold">3</span> Location</h2>
+                    <h2 class="  text-center pt-1"> <span class="font-semibold">10</span> Location</h2>
                     <p class="  text-center md:block hidden pt-1"> Save up to $200</p>
                     <div class="border-b w-20 mt-7 mb-6 border-[#ff914d]"></div>
                     <h2 class="font-bold md:text-5xl text-2xl text-center" id="startUpPrice3">$459.99</h2>
@@ -430,63 +430,150 @@
         <div class="w-full h-screen bg-[#00000053] fixed top-0 left-0" id="contectPopupOverlay"></div>
         <div class="flex items-center justify-center h-screen p-4">
 
-            <form
-                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[90vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
+            <form method="POST" action="https://api.web3forms.com/submit"
+                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[80vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
                 <div class="max-w-[30rem] w-full mx-auto">
-
+                    <input type="hidden" name="access_key" value="94c66fa7-dfc6-4ecd-8b1c-9709b6c546c0">
                     <h2 class="text-center font-bold text-2xl"> Schedule Your Free Evaluation Call</h2>
                     <p class="text-center pt-8">Fill out the following form to speak with
                         someone from our team. After reviewing your responses, we will get in touch with you.</p>
-                    <input type="text"
+                    <input type="text" name="name"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-8 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Full Name*">
-                    <input type="email"
+                    <input type="email" name="email"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Email*">
                     <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
-                        placeholder="Name of Your Business*">
+                        name="your Business " placeholder="Name of Your Business*">
 
                     <div
-                        class="rounded-lg bg-[#e0e0e0] pl-3 py-0. w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500 flex items-center gap-1">
-                        <img src="./Docs/Assets/usFlag.webp" class="h-4" alt="">
-                        <input type="number" class=" md:p-3.5 p-3 w-full bg-transparent rounded-lg" required
-                            placeholder="Phone*">
+                        class="relative rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
+                        <!-- Selected Option -->
+                        <div id="selected2"
+                            class="flex items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
+                            <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
+                            <span class="text-gray-700">+1</span>
+                        </div>
+
+                        <!-- Dropdown Options -->
+                        <ul id="dropdown2"
+                            class="hidden max-h-40 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/us.png" data-code="+1">
+                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+1</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/gb.png" data-code="+44">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+44</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/in.png" data-code="+91">
+                                <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+91</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/pk.png" data-code="+92">
+                                <img src="https://flagcdn.com/w40/pk.png" alt="Pakistan Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+92</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/au.png" data-code="+61">
+                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+61</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/sg.png" data-code="+65">
+                                <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+65</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/nz.png" data-code="+64">
+                                <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+64</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/de.png" data-code="+49">
+                                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+49</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/fr.png" data-code="+33">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+33</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/jp.png" data-code="+81">
+                                <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+81</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/cn.png" data-code="+86">
+                                <img src="https://flagcdn.com/w40/cn.png" alt="China Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+86</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/br.png" data-code="+55">
+                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+55</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/za.png" data-code="+27">
+                                <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+27</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/kr.png" data-code="+82">
+                                <img src="https://flagcdn.com/w40/kr.png" alt="South Korea Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+82</span>
+                            </li>
+                        </ul>
+
+
+                        <!-- Input for phone number -->
+                        <input type="number" name="Phone Number"
+                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none "
+                            required placeholder="Phone*">
+
                     </div>
 
-                    <input type="text"
+
+
+                    <input type="text" name="Business Type"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Business Type*">
 
                     <div class=" mt-4 flex items-center gap-5">
                         <label for="insta" class="text-zinc-700">Instagram</label>
-                        <input id="insta" type="text"
+                        <input id="insta" type="text" name="instagram"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="TicTok" class="text-zinc-700">TicTok</label>
-                        <input id="TicTok" type="text"
+                        <input id="TicTok" type="text" name="TicTok"
                             class=" md:max-w-[23.5rem] max-w-[11rem] ml-auto p-3 border rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="Facebook" class="text-zinc-700">Facebook</label>
-                        <input id="Facebook" type="text"
+                        <input id="Facebook" type="text" name="Facebook"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="Other" class="text-zinc-700">Other</label>
-                        <input id="Other" type="text"
+                        <input id="Other" type="text" name="Other"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
 
-                    <textarea
+                    <textarea name="description"
                         class=" md:p-3.5 resize-none p-3 rounded-lg bg-[#e0e0e0] w-full mt-4 border border-white focus:border-zinc-400 transition-all duration-500"
                         placeholder="Tell us more about your business..." rows="4"></textarea>
 
-                    <input type="text"
+                    <input type="text" name="How did you hear about us : "
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full border border-white focus:border-zinc-400 transition-all duration-500"
                         placeholder="How did you hear about us?">
 
@@ -496,15 +583,13 @@
                     </div>
 
                     <div class="flex gap-3 items-start mt-7">
-                        <input type="checkbox" class="-mt-1 w-8 h-8">
-                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up
-                            regarding
+                        <input type="checkbox" name="checkbox" class="-mt-1 w-8 h-8 cursor-pointer">
+                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up regarding
                             the contact number provided in this form.</p>
                     </div>
 
                     <div class="flex items-center justify-center">
-                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy
-                            Policy</a>
+                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy Policy</a>
                     </div>
 
                 </div>
@@ -518,64 +603,150 @@
         <div class="w-full h-screen bg-[#00000053] fixed top-0 left-0" id="AffiliateBusinessOverlay"></div>
         <div class="flex items-center justify-center h-screen p-4">
 
-            <form
-                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[90vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
+            <form method="POST" action="https://api.web3forms.com/submit"
+                class="max-w-3xl w-full mx-auto p-5 rounded-lg max-h-[80vh] popup h-full overflow-auto md:py-10 relative z-20 bg-white">
                 <div class="max-w-[30rem] w-full mx-auto">
-
+                    <input type="hidden" name="access_key" value="a2c32aea-896b-424c-ac37-ba6ed8a23453">
                     <h2 class="text-center font-bold text-2xl"> Do You Want to Resell our System?</h2>
-                    <p class="text-center pt-8">Fill out the following form to speak directly with Josh at Bonk
-                        Banner
+                    <p class="text-center pt-8">Fill out the following form to speak directly with Josh at Bonk Banner
                         and expand your consultation / marketing agency!</p>
-                    <input type="text"
+                    <input type="text" name="name"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-8 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Full Name*">
-                    <input type="email"
+                    <input type="email" name="email"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Email*">
                     <input type="text" class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2" required
-                        placeholder="Name of Your Business*">
+                        name="your Business " placeholder="Name of Your Business*">
 
                     <div
-                        class="rounded-lg bg-[#e0e0e0] pl-3 py-0. w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500 flex items-center gap-1">
-                        <img src="./Docs/Assets/usFlag.webp" class="h-4" alt="">
-                        <input type="number" class=" md:p-3.5 p-3 w-full bg-transparent rounded-lg" required
-                            placeholder="Phone*">
+                        class="relative rounded-lg bg-[#e0e0e0] pl-3 py-2 w-full mt-2 border border-white focus-within:border-zinc-400 transition-all duration-500">
+                        <!-- Selected Option -->
+                        <div id="selected"
+                            class="flex items-center gap-2 cursor-pointer bg-transparent w-full p-2 rounded-lg">
+                            <img src="https://flagcdn.com/w40/us.png" alt="us Flag" class="w-6 h-4">
+                            <span class="text-gray-700">+1</span>
+                        </div>
+
+                        <!-- Dropdown Options -->
+                        <ul id="dropdown"
+                            class="hidden max-h-40 overflow-auto fadeIn absolute left-0 top-full w-full bg-white rounded-lg shadow-md mt-1 z-10">
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/us.png" data-code="+1">
+                                <img src="https://flagcdn.com/w40/us.png" alt="USA Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+1</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/gb.png" data-code="+44">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="UK Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+44</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/in.png" data-code="+91">
+                                <img src="https://flagcdn.com/w40/in.png" alt="India Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+91</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/pk.png" data-code="+92">
+                                <img src="https://flagcdn.com/w40/pk.png" alt="Pakistan Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+92</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/au.png" data-code="+61">
+                                <img src="https://flagcdn.com/w40/au.png" alt="Australia Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+61</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/sg.png" data-code="+65">
+                                <img src="https://flagcdn.com/w40/sg.png" alt="Singapore Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+65</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/nz.png" data-code="+64">
+                                <img src="https://flagcdn.com/w40/nz.png" alt="New Zealand Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+64</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/de.png" data-code="+49">
+                                <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+49</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/fr.png" data-code="+33">
+                                <img src="https://flagcdn.com/w40/fr.png" alt="France Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+33</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/jp.png" data-code="+81">
+                                <img src="https://flagcdn.com/w40/jp.png" alt="Japan Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+81</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/cn.png" data-code="+86">
+                                <img src="https://flagcdn.com/w40/cn.png" alt="China Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+86</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/br.png" data-code="+55">
+                                <img src="https://flagcdn.com/w40/br.png" alt="Brazil Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+55</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/za.png" data-code="+27">
+                                <img src="https://flagcdn.com/w40/za.png" alt="South Africa Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+27</span>
+                            </li>
+                            <li class="flex items-center gap-2 p-2 transition-all duration-500 hover:bg-gray-200 cursor-pointer"
+                                data-flag="https://flagcdn.com/w40/kr.png" data-code="+82">
+                                <img src="https://flagcdn.com/w40/kr.png" alt="South Korea Flag" class="w-6 h-4">
+                                <span class="text-gray-700">+82</span>
+                            </li>
+                        </ul>
+
+
+                        <!-- Input for phone number -->
+                        <input type="number" name="Phone Number"
+                            class="md:p-3.5 md:pt-4  p-3 w-full bg-transparent block absolute top-0 lg:max-w-[23rem] md:max-w-[18rem] max-w-[12rem] ml-auto right-0 rounded-lg focus:outline-none "
+                            required placeholder="Phone*">
+
                     </div>
 
-                    <input type="text"
+
+
+                    <input type="text" name="Business Type"
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full mt-2 border border-white focus:border-zinc-400 transition-all duration-500"
                         required placeholder="Business Type*">
 
                     <div class=" mt-4 flex items-center gap-5">
                         <label for="insta" class="text-zinc-700">Instagram</label>
-                        <input id="insta" type="text"
+                        <input id="insta" type="text" name="instagram"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="TicTok" class="text-zinc-700">TicTok</label>
-                        <input id="TicTok" type="text"
+                        <input id="TicTok" type="text" name="TicTok"
                             class=" md:max-w-[23.5rem] max-w-[11rem] ml-auto p-3 border rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="Facebook" class="text-zinc-700">Facebook</label>
-                        <input id="Facebook" type="text"
+                        <input id="Facebook" type="text" name="Facebook"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
                     <div class=" mt-2 flex items-center gap-5">
                         <label for="Other" class="text-zinc-700">Other</label>
-                        <input id="Other" type="text"
+                        <input id="Other" type="text" name="Other"
                             class=" p-3 border md:max-w-[23.5rem] max-w-[11rem] ml-auto rounded-lg bg-[#e0e0e0] px-3 border-white focus:border-zinc-400 transition-all duration-500 w-full"
                             placeholder="@">
                     </div>
 
-                    <textarea
+                    <textarea name="description"
                         class=" md:p-3.5 resize-none p-3 rounded-lg bg-[#e0e0e0] w-full mt-4 border border-white focus:border-zinc-400 transition-all duration-500"
                         placeholder="Tell us more about your business..." rows="4"></textarea>
 
-                    <input type="text"
+                    <input type="text" name="How did you hear about us : "
                         class=" md:p-3.5 p-3 rounded-lg bg-[#e0e0e0] w-full border border-white focus:border-zinc-400 transition-all duration-500"
                         placeholder="How did you hear about us?">
 
@@ -585,15 +756,13 @@
                     </div>
 
                     <div class="flex gap-3 items-start mt-7">
-                        <input type="checkbox" class="-mt-1 w-8 h-8">
-                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up
-                            regarding
+                        <input type="checkbox" name="checkbox" class="-mt-1 w-8 h-8 cursor-pointer">
+                        <p class="text-zinc-700 text-sm">I agree to receive WhatsApp messages for follow-up regarding
                             the contact number provided in this form.</p>
                     </div>
 
                     <div class="flex items-center justify-center">
-                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy
-                            Policy</a>
+                        <a href="./privacypolicy.html" class="text-[#5271ff] hover:underline mt-7">Privacy Policy</a>
                     </div>
 
                 </div>
