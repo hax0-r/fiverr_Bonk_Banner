@@ -152,7 +152,7 @@ input:user-invalid {
     left: 0;
     right: 0;
     bottom: 0px;
-    background: #fff;
+    background: #ffac56;
     transition: .4s;
     border-radius: 30px;
     border: 1px solid #ccc;
@@ -173,7 +173,7 @@ input:user-invalid {
    }
    
    input:checked + .slider {
-    background-color: #ffac56;
+    background-color: #ebe2da;
     border: 1px solid transparent;
    }
    
