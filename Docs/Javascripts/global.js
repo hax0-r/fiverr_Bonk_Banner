@@ -169,35 +169,3 @@ initializeDropdowns();
 
 
 
-//  ==============
-
-const selected2 = document.getElementById('selected2');
-const dropdown2 = document.getElementById('dropdown2');
-
-selected2.addEventListener('click', () => {
-    dropdown2.classList.toggle('hidden');
-});
-
-dropdown2.addEventListener('click', (e) => {
-    if (e.target.tagName === 'LI' || e.target.closest('li')) {
-        const item = e.target.closest('li');
-        const flag = item.getAttribute('data-flag');
-        const code = item.getAttribute('data-code');
-
-        // Update selected2 option
-        selected2.innerHTML = `
-            <img src="${flag}" alt="Flag" class="w-6 h-4">
-            <span class="text-gray-700">${code}</span>
-        `;
-
-        // Hide dropdown2
-        dropdown2.classList.add('hidden');
-    }
-});
-
-// Close dropdown2 when clicking outside
-document.addEventListener('click', (e) => {
-    if (!dropdown2.contains(e.target) && !selected2.contains(e.target)) {
-        dropdown2.classList.add('hidden');
-    }
-});
